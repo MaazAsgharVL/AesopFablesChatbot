@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Container name
-CONTAINER_NAME="optimistic_jang_0"
+CONTAINER_NAME="aesopfablescontainer"
 
 # Check if the container is running
 if [ "$(docker ps -q -f name=$CONTAINER_NAME)" ]; then

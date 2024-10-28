@@ -1,4 +1,4 @@
-FROM python:3.10 AS allergy_bot_2.0
+FROM python:3.10 AS aesopfables
 
 WORKDIR /app
 
@@ -7,11 +7,9 @@ COPY entrypoint.sh /app/entrypoint.sh
 RUN mkdir -p /app/data/
 RUN chmod +x /app/entrypoint.sh
 
-
 # Install Python packages
 RUN pip3 install --upgrade pip
-# Install Python packages directly in the Dockerfile
-RUN pip3 install beautifulsoup4 
+RUN pip3 install beautifulsoup4
 RUN pip3 install requests
 RUN pip3 install langchain
 RUN pip3 install langchain_community
@@ -22,7 +20,8 @@ RUN pip3 install langchain_experimental
 RUN pip3 install langchain_chroma
 RUN pip3 install pdfminer.six
 RUN pip3 install Flask
-
+RUN pip3 install Selenium
+RUN pip3 install webdriver_manager
 
 # Now copy the rest of the application code
 ADD . /app

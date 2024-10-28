@@ -1,4 +1,4 @@
-docker build  -t allergy_bot_2.0 .
+docker build  -t aesopfables .
 
 
 
