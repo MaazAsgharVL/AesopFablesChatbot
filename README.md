@@ -12,7 +12,7 @@ This project is a chatbot designed to interactively share and discuss Aesop's Fa
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:MaazAsgharVL/AesopFablesChatbot.git
    ```
 
 2. Navigate to the main project directory:
